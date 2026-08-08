@@ -9,18 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark">
+<body>
 
   <!-- NAV -->
   <nav class="nav">
     <a href="index.html" class="nav__logo">Revasser</a>
     <ul class="nav__links" id="nav-links">
+      <li><a href="index.html" class="nav__active">Home</a></li>
       <li><a href="#flavours">Flavours</a></li>
       <li><a href="gifting.html">Gifting</a></li>
       <li><a href="#order">Order</a></li>
     </ul>
     <div class="nav__actions">
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">Light</button>
       <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
@@ -203,6 +203,7 @@
   <footer class="footer">
     <p class="footer__logo">Revasser</p>
     <nav class="footer__nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
       <a href="#flavours">Flavours</a>
       <a href="gifting.html">Gifting</a>
       <a href="#order">Order</a>
@@ -211,12 +212,6 @@
   </footer>
 
   <script>
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', () => {
-      const isDark = document.body.classList.toggle('dark');
-      toggle.textContent = isDark ? 'Light' : 'Dark';
-    });
-
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
     const navOverlay = document.getElementById('nav-overlay');

@@ -2,12 +2,12 @@
    TOKENS
 ─────────────────────────────────────────── */
 :root {
-  --cream:     #F8F5F0;
-  --parchment: #EDE7DC;
-  --sand:      #8B7260;
-  --brown:     #5C4A38;
-  --ink:       #1A1008;
-  --muted:     #5C4A3C;
+  --cream:     #13100E;
+  --parchment: #1E1814;
+  --sand:      #BFA882;
+  --brown:     #D4A843;
+  --ink:       #EAE0D0;
+  --muted:     #9B8A6A;
 
   --font-serif: 'DM Serif Display', Georgia, serif;
   --font-sans:  'Jost', system-ui, sans-serif;
@@ -130,7 +130,7 @@ ul, ol { list-style: none; }
 }
 
 .nav.is-scrolled {
-  background: rgba(248, 245, 240, 0.9);
+  background: rgba(19, 16, 14, 0.92);
   backdrop-filter: blur(8px);
   border-bottom-color: var(--parchment);
 }
@@ -364,7 +364,7 @@ ul, ol { list-style: none; }
   font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--sand);
+  color: var(--brown);
   margin-bottom: 1.4rem;
 }
 
@@ -1010,77 +1010,29 @@ ul, ol { list-style: none; }
   }
 }
 
-/* ───────────────────────────────────────────
-   THEME TOGGLE BUTTON
-─────────────────────────────────────────── */
-.theme-toggle {
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: rgba(255, 255, 255, 0.85);
-  font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 400;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  padding: 0.3rem 0.75rem;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
-}
-.theme-toggle:hover { color: #FFFFFF; border-color: rgba(255, 255, 255, 0.7); }
-
-.nav.is-scrolled .theme-toggle { border-color: var(--parchment); color: var(--muted); }
-.nav.is-scrolled .theme-toggle:hover { color: var(--ink); border-color: var(--sand); }
-
-/* ───────────────────────────────────────────
-   DARK THEME
-─────────────────────────────────────────── */
-body.dark {
-  --cream:     #13100E;
-  --parchment: #1E1814;
-  --sand:      #BFA882;
-  --brown:     #D4A843;
-  --ink:       #EAE0D0;
-  --muted:     #9B8A6A;
-}
-
-/* Nav glass tint */
-body.dark .nav.is-scrolled {
-  background: rgba(19, 16, 14, 0.92);
-}
-
-/* ── Churning ──
-   In dark mode: background: var(--ink) becomes warm parchment —
-   a "lit panel" effect. Text uses var(--cream) which is now very dark = readable. */
-body.dark .churning__live { color: var(--brown); }
-
-/* ── Order section ──
-   Background becomes slightly lighter dark via var(--parchment) = #1E1814.
-   Buttons inherit correctly: ink bg (now cream) + cream text (now dark) = readable. */
-
 /* ── Contact section (gifting page) ──
-   Background: var(--ink) = #EAE0D0 (warm parchment panel).
-   Inject dark overrides so buttons don't blend into the panel. */
-body.dark .contact-section .btn--dark {
+   Background is var(--ink), a warm parchment "lit panel" against the
+   otherwise dark page — override buttons so they don't blend into it. */
+.contact-section .btn--dark {
   background: #2C1F14;
   color: var(--ink);
   border-color: #2C1F14;
 }
-body.dark .contact-section .btn--dark:hover {
+.contact-section .btn--dark:hover {
   background: var(--brown);
   border-color: var(--brown);
   color: #13100E;
 }
-body.dark .contact-section .btn--outline {
+.contact-section .btn--outline {
   color: #2C1F14;
   border-color: #2C1F14;
 }
-body.dark .contact-section .btn--outline:hover {
+.contact-section .btn--outline:hover {
   background: #2C1F14;
   color: var(--ink);
 }
-body.dark .contact-section .btn--ghost {
+.contact-section .btn--ghost {
   color: #5C4A38;
   border-color: #A89070;
 }
-body.dark .contact-section .body-text { color: #6B5A42; }
+.contact-section .body-text { color: #6B5A42; }
