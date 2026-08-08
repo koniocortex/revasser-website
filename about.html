@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Revasser — Artisan Gelato</title>
+  <title>About — Revasser</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -15,10 +15,10 @@
   <nav class="nav">
     <a href="index.html" class="nav__logo">Revasser</a>
     <ul class="nav__links" id="nav-links">
-      <li><a href="index.html" class="nav__active">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="flavours.html">Flavours</a></li>
       <li><a href="gifting.html">Gifting</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="about.html" class="nav__active">About</a></li>
     </ul>
     <div class="nav__actions">
       <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
@@ -28,26 +28,22 @@
   </nav>
   <div class="nav__overlay" id="nav-overlay"></div>
 
-  <!-- ─── HERO ─────────────────────────────────────────── -->
-  <section class="hero">
+  <!-- ─── ABOUT HERO ───────────────────────────────────── -->
+  <section class="a-hero">
     <div class="hero__bg">
-      <img src="images/hero-home.png" alt="Revasser artisan gelato" />
+      <img src="images/collage-ingredients.png" alt="Hazelnuts, dried figs and coffee beans — Revasser ingredients" />
     </div>
     <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <p class="hero__eyebrow">Small-batch artisan gelato</p>
-      <h1 class="hero__title">
-        <em>Artisanal.</em><br />
-        <em>Decadent.</em><br />
-        <em>Moreish.</em>
-      </h1>
+    <div class="a-hero__content">
+      <p class="hero__eyebrow">Our Story</p>
+      <h1 class="a-hero__title">Why<br /><em>rêvasser.</em></h1>
       <p class="hero__subtitle">
-        Small-batch gelato, crafted with the finest ingredients.
+        The people, the philosophy, and the ingredients behind every batch.
       </p>
     </div>
   </section>
 
-  <!-- ─── WHY RÊVASSER (STORY) ──────────────────────────── -->
+  <!-- ─── WHY RÊVASSER ─────────────────────────────────── -->
   <section class="story">
     <div class="story__inner">
       <div class="story__header">
@@ -59,100 +55,64 @@
           We are a small-batch gelato brand, trained in Italy, backed by years of culinary experience, a discerning palate, and an uncompromising commitment to using the finest ingredients in pursuit of exceptional gelato. The French word rêvasser means "to daydream." That simple idea has shaped everything we do.
         </p>
         <p class="body-text story__text">
-          Every flavour begins with an idea—a favourite dessert, a seasonal fruit or a nostalgic classic. We layer our gelato with thoughtfully crafted variegatos and house-made mix-ins, so every spoonful offers a new texture and robust flavour—velvety smooth, crunchy, nutty and sometimes even savoury.
+          Every flavour begins with an idea—a favourite dessert, a seasonal fruit or a nostalgic classic. We layer our gelato with thoughtfully crafted variegatos and house-made mix-ins, so every spoonful offers a new texture and robust flavour—velvety smooth, crunchy, nutty and sometimes even savoury. It's this interplay of layers that transforms each gelato into a complete dessert experience.
+        </p>
+        <p class="body-text story__text">
+          At rêvasser, gelato isn't an accompaniment to dessert—it is the dessert! Each recipe is thoughtfully composed and carefully balanced, from the base to the final mix-in, creating layers of flavour and texture in every bite. Our flavour combinations are unique, and some pairings have been a revelation for me as well!
+        </p>
+        <p class="body-text story__text">
+          Crafted to become the perfect nightcap, rêvasser is an indulgent ritual to end the day.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ─── WHAT'S CHURNING ──────────────────────────────── -->
-  <section class="churning">
-    <div class="churning__bg">
-      <img src="images/churning-bg.png" alt="" aria-hidden="true" />
-    </div>
-    <div class="churning__inner">
-      <div class="churning__left">
-        <p class="churning__live"><span class="churning__dot"></span>In churn this week</p>
-        <h2 class="churning__title">What's<br /><em>Churning.</em></h2>
-        <p class="churning__sub">From the kitchen — fresh, limited, and going fast.</p>
-        <a href="#order" class="churning__cta">Order now</a>
+  <!-- ─── ABOUT THE FOUNDER ────────────────────────────── -->
+  <section class="founder">
+    <div class="founder__image-wrap">
+      <!-- replace with <img src="…" alt="…" /> once founder photography is ready -->
+      <div class="founder__image-block">
+        <span class="founder__image-placeholder">Photo coming soon</span>
       </div>
-      <div class="churning__list">
-        <div class="churning__item">
-          <span class="churning__name">Pistachio Tiramisu</span>
-          <span class="churning__avail">Available Friday</span>
-        </div>
-        <div class="churning__item">
-          <span class="churning__name">Mango Pistachio</span>
-          <span class="churning__avail">Selling fast</span>
-        </div>
+    </div>
+    <div class="founder__text">
+      <p class="hero__eyebrow">Meet the Founder</p>
+      <h2 class="section-title">Divija<br /><em>Singh.</em></h2>
+      <p class="body-text founder__story">
+        I'm a curious traveller—a flâneur—wildlife enthusiast, amateur sitarist, dog lover and an occasional writer. Armed with a law degree, a Master's in Social Welfare &amp; Development, and a few more diplomas along the way, I chose to follow my passion for the culinary arts. I was raised in a family of avid food lovers and exceptional cooks—perfectionists, really. Food was always my calling.
+      </p>
+      <p class="body-text founder__story">
+        Over the years, I have worked as a food and restaurant consultant, curating menus, designing dining experiences and culinary events across India and abroad. My love, passion and obsession with gelato ultimately took me to Italy. In Grosseto, Tuscany, I trained in the science, technique and craftsmanship of authentic artisanal gelato making. Today, rêvasser is the culmination of that journey, with one endeavour: to create the finest artisanal offering and make rêvasser synonymous with gelato.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── THE RÊVASSER STORY ───────────────────────────── -->
+  <section class="story">
+    <div class="story__inner">
+      <div class="story__header">
+        <p class="hero__eyebrow">Our Story</p>
+        <h2 class="section-title">The rêvasser<br /><em>story.</em></h2>
+      </div>
+      <div class="story__body">
+        <p class="body-text story__text">
+          After intensive training in Italy, I spent over six months on research and development—refining recipes, testing flavours and perfecting every texture before launching rêvasser.
+        </p>
+        <p class="body-text story__text">
+          Every batch is handcrafted in small quantities, using the finest carefully sourced ingredients, honed techniques, formulations and uncompromising attention to detail. The focus has always been on precision, balance and character.
+        </p>
+        <p class="body-text story__text">
+          The result is gelato that is elegant, luxurious, nuanced, indulgent, decadent and moreish.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- ─── FLAVOURS ─────────────────────────────────────── -->
-  <section class="flavours" id="flavours">
-    <header class="flavours__header">
-      <h2 class="section-title">Flavours</h2>
-      <p class="body-text flavours__sub">Seasonal. Small-batch. Always crafted.</p>
-    </header>
-
-    <ul class="flavours__list">
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-dark-chocolate.png" alt="Dark Chocolate, Brownie & Toasted Pecans" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Dark Chocolate, Brownie &amp; Toasted Pecans</h3>
-        </div>
-      </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-cheese-cherry.png" alt="Cheesecake, Cherry & Almond Crumble" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Cheesecake, Cherry &amp; Almond Crumble</h3>
-        </div>
-      </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-coffee-fig.png" alt="Coffee & Toasted Pecans" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Coffee &amp; Toasted Pecans</h3>
-        </div>
-      </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-pistachio-tiramisu.png" alt="Pistachio Tiramisu" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Pistachio Tiramisu</h3>
-        </div>
-      </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-vanilla.png" alt="Chocolate, Blueberry & Almond" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Chocolate, Blueberry &amp; Almond</h3>
-        </div>
-      </li>
-    </ul>
-
-    <a href="flavours.html" class="hero__cta flavours__view-all">View all flavours</a>
-  </section>
-
-  <!-- ─── GIFTING TEASER ("JUST FOR YOU") ───────────────── -->
-  <section class="gift-teaser">
-    <div class="gift-teaser__bg">
-      <img src="images/hero-gifting.png" alt="Revasser gelato gifting" />
-    </div>
-    <div class="gift-teaser__overlay"></div>
-    <div class="gift-teaser__content">
-      <p class="hero__eyebrow">Just for you</p>
-      <h2 class="section-title gift-teaser__title">Artisan gelato,<br /><em>gifted with intention.</em></h2>
-      <a href="gifting.html" class="hero__cta">Learn more</a>
+  <!-- ─── TESTIMONIAL SPOTLIGHT ─────────────────────────── -->
+  <section class="testimonial-spotlight">
+    <div class="testimonial-spotlight__inner">
+      <p class="testimonial__quote">"The rose cardamom is unlike anything I've tasted. It doesn't try too hard."</p>
+      <footer class="testimonial__attr">— Ankit S.</footer>
     </div>
   </section>
 

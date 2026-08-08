@@ -224,7 +224,8 @@ ul, ol { list-style: none; }
 ─────────────────────────────────────────── */
 .hero,
 .g-hero,
-.f-hero {
+.f-hero,
+.a-hero {
   position: relative;
   width: 100%;
   height: 100svh;
@@ -270,7 +271,8 @@ ul, ol { list-style: none; }
 /* Text content — sits above overlay */
 .hero__content,
 .g-hero__content,
-.f-hero__content {
+.f-hero__content,
+.a-hero__content {
   position: relative;
   z-index: 2;
   padding: 0 var(--rail) clamp(2.5rem, 5vw, 5rem);
@@ -787,6 +789,42 @@ ul, ol { list-style: none; }
   font-style: italic;
 }
 
+/* ═══════════════════════════════════════════
+   ABOUT PAGE
+═══════════════════════════════════════════ */
+
+.a-hero__title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-bottom: 1.2rem;
+}
+
+.a-hero__title em { font-style: italic; color: rgba(255,255,255,0.75); }
+
+/* Single-quote testimonial spotlight — for pages with only one relevant review */
+.testimonial-spotlight {
+  padding: var(--gap) var(--rail);
+  background: var(--parchment);
+}
+
+.testimonial-spotlight__inner {
+  max-width: 44rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.testimonial-spotlight .testimonial__quote {
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+}
+
 /* Occasions */
 .occasions {
   display: grid;
@@ -927,6 +965,16 @@ ul, ol { list-style: none; }
   width: 100%;
   height: 100%;
   background: var(--parchment);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder__image-placeholder {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sand);
 }
 
 .founder__text {
@@ -991,6 +1039,7 @@ ul, ol { list-style: none; }
   .hero__title { font-size: clamp(2.8rem, 9vw, 5rem); }
   .g-hero__title { font-size: clamp(2.6rem, 8vw, 4.5rem); }
   .f-hero__title { font-size: clamp(2.6rem, 8vw, 4.5rem); }
+  .a-hero__title { font-size: clamp(2.6rem, 8vw, 4.5rem); }
 
   /* Churning */
   .churning__inner { grid-template-columns: 1fr; }
@@ -1061,6 +1110,7 @@ ul, ol { list-style: none; }
   .hero__title { font-size: clamp(2.6rem, 11vw, 4rem); }
   .g-hero__title { font-size: clamp(2.4rem, 10vw, 3.6rem); }
   .f-hero__title { font-size: clamp(2.4rem, 10vw, 3.6rem); }
+  .a-hero__title { font-size: clamp(2.4rem, 10vw, 3.6rem); }
 
   .gift-teaser { height: 60svh; min-height: 26rem; }
 
