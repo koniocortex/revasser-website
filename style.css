@@ -40,6 +40,7 @@ img { display: block; width: 100%; object-fit: cover; }
 .flavour-row__img-wrap img,
 .collage__cell img,
 .founder__image-wrap img,
+.flavour-detail__media img,
 .occasions__card-img {
   height: 100%;
   width: 100%;
@@ -222,7 +223,8 @@ ul, ol { list-style: none; }
    HERO (shared — homepage & gifting)
 ─────────────────────────────────────────── */
 .hero,
-.g-hero {
+.g-hero,
+.f-hero {
   position: relative;
   width: 100%;
   height: 100svh;
@@ -267,7 +269,8 @@ ul, ol { list-style: none; }
 
 /* Text content — sits above overlay */
 .hero__content,
-.g-hero__content {
+.g-hero__content,
+.f-hero__content {
   position: relative;
   z-index: 2;
   padding: 0 var(--rail) clamp(2.5rem, 5vw, 5rem);
@@ -710,6 +713,80 @@ ul, ol { list-style: none; }
 
 .g-hero__title em { font-style: italic; color: rgba(255,255,255,0.75); }
 
+/* ═══════════════════════════════════════════
+   FLAVOURS PAGE
+═══════════════════════════════════════════ */
+
+.f-hero__title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-bottom: 1.2rem;
+}
+
+.f-hero__title em { font-style: italic; color: rgba(255,255,255,0.75); }
+
+/* Flavour detail list */
+.flavour-detail {
+  padding: var(--gap) var(--rail);
+}
+
+.flavour-detail__header {
+  margin-bottom: clamp(3rem, 5vw, 5rem);
+}
+
+.flavour-detail__list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3.5rem, 7vw, 6.5rem);
+}
+
+.flavour-detail__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.flavour-detail__item:nth-child(even) .flavour-detail__media { order: 2; }
+.flavour-detail__item:nth-child(even) .flavour-detail__body { order: 1; }
+
+.flavour-detail__media {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--parchment);
+}
+
+.flavour-detail__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.flavour-detail__name {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.flavour-detail__note {
+  max-width: 44ch;
+}
+
+.flavour-detail__price {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sand);
+  font-style: italic;
+}
+
 /* Occasions */
 .occasions {
   display: grid;
@@ -913,6 +990,7 @@ ul, ol { list-style: none; }
   /* Hero — full-screen on all sizes, just reduce font */
   .hero__title { font-size: clamp(2.8rem, 9vw, 5rem); }
   .g-hero__title { font-size: clamp(2.6rem, 8vw, 4.5rem); }
+  .f-hero__title { font-size: clamp(2.6rem, 8vw, 4.5rem); }
 
   /* Churning */
   .churning__inner { grid-template-columns: 1fr; }
@@ -922,6 +1000,12 @@ ul, ol { list-style: none; }
   .flavour-row { grid-template-columns: 80px 1fr; gap: 1.2rem; }
   .flavour-row__text { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
   .flavour-row:hover { margin: 0; padding-left: 0; padding-right: 0; }
+
+  /* Flavour detail (flavours page) */
+  .flavour-detail__item { grid-template-columns: 1fr; gap: 1.5rem; }
+  .flavour-detail__item:nth-child(even) .flavour-detail__media,
+  .flavour-detail__item:nth-child(even) .flavour-detail__body { order: initial; }
+  .flavour-detail__media { aspect-ratio: 16 / 10; }
 
   /* Allergens */
   .allergens__inner { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -976,6 +1060,7 @@ ul, ol { list-style: none; }
 
   .hero__title { font-size: clamp(2.6rem, 11vw, 4rem); }
   .g-hero__title { font-size: clamp(2.4rem, 10vw, 3.6rem); }
+  .f-hero__title { font-size: clamp(2.4rem, 10vw, 3.6rem); }
 
   .gift-teaser { height: 60svh; min-height: 26rem; }
 

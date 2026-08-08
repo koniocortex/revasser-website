@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Revasser — Artisan Gelato</title>
+  <title>Flavours — Revasser</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -15,8 +15,8 @@
   <nav class="nav">
     <a href="index.html" class="nav__logo">Revasser</a>
     <ul class="nav__links" id="nav-links">
-      <li><a href="index.html" class="nav__active">Home</a></li>
-      <li><a href="flavours.html">Flavours</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="flavours.html" class="nav__active">Flavours</a></li>
       <li><a href="gifting.html">Gifting</a></li>
       <li><a href="#order">Order</a></li>
     </ul>
@@ -28,48 +28,23 @@
   </nav>
   <div class="nav__overlay" id="nav-overlay"></div>
 
-  <!-- ─── HERO ─────────────────────────────────────────── -->
-  <section class="hero">
+  <!-- ─── FLAVOURS HERO ────────────────────────────────── -->
+  <section class="f-hero">
     <div class="hero__bg">
-      <img src="images/hero-home.png" alt="Revasser artisan gelato" />
+      <img src="images/churning-bg.png" alt="Gelato being churned" />
     </div>
     <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <p class="hero__eyebrow">Small-batch artisan gelato</p>
-      <h1 class="hero__title">
-        <em>Artisanal.</em><br />
-        <em>Decadent.</em><br />
-        <em>Moreish.</em>
-      </h1>
+    <div class="f-hero__content">
+      <p class="hero__eyebrow">Our Flavours</p>
+      <h1 class="f-hero__title">Five signature<br /><em>scoops.</em></h1>
       <p class="hero__subtitle">
-        Small-batch gelato, crafted with the finest ingredients.
+        Small-batch, hand-churned, and never the same batch twice.
       </p>
-    </div>
-  </section>
-
-  <!-- ─── WHY RÊVASSER (STORY) ──────────────────────────── -->
-  <section class="story">
-    <div class="story__inner">
-      <div class="story__header">
-        <p class="hero__eyebrow">Why rêvasser</p>
-        <h2 class="section-title">To<br /><em>daydream.</em></h2>
-      </div>
-      <div class="story__body">
-        <p class="body-text story__text">
-          We are a small-batch gelato brand, trained in Italy, backed by years of culinary experience, a discerning palate, and an uncompromising commitment to using the finest ingredients in pursuit of exceptional gelato. The French word rêvasser means "to daydream." That simple idea has shaped everything we do.
-        </p>
-        <p class="body-text story__text">
-          Every flavour begins with an idea—a favourite dessert, a seasonal fruit or a nostalgic classic. We layer our gelato with thoughtfully crafted variegatos and house-made mix-ins, so every spoonful offers a new texture and robust flavour—velvety smooth, crunchy, nutty and sometimes even savoury.
-        </p>
-      </div>
     </div>
   </section>
 
   <!-- ─── WHAT'S CHURNING ──────────────────────────────── -->
   <section class="churning">
-    <div class="churning__bg">
-      <img src="images/churning-bg.png" alt="" aria-hidden="true" />
-    </div>
     <div class="churning__inner">
       <div class="churning__left">
         <p class="churning__live"><span class="churning__dot"></span>In churn this week</p>
@@ -90,69 +65,92 @@
     </div>
   </section>
 
-  <!-- ─── FLAVOURS ─────────────────────────────────────── -->
-  <section class="flavours" id="flavours">
-    <header class="flavours__header">
-      <h2 class="section-title">Flavours</h2>
-      <p class="body-text flavours__sub">Seasonal. Small-batch. Always crafted.</p>
+  <!-- ─── FLAVOUR DETAIL ───────────────────────────────── -->
+  <section class="flavour-detail">
+    <header class="flavour-detail__header">
+      <h2 class="section-title">The<br /><em>Flavours.</em></h2>
+      <p class="body-text">Five recipes, made in small batches. Descriptions and pricing below are draft placeholders, pending final copy.</p>
     </header>
 
-    <ul class="flavours__list">
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
+    <ul class="flavour-detail__list">
+      <li class="flavour-detail__item">
+        <div class="flavour-detail__media">
           <img src="images/flavour-dark-chocolate.png" alt="Dark Chocolate, Brownie & Toasted Pecans" />
         </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Dark Chocolate, Brownie &amp; Toasted Pecans</h3>
+        <div class="flavour-detail__body">
+          <h3 class="flavour-detail__name">Dark Chocolate, Brownie &amp; Toasted Pecans</h3>
+          <p class="body-text flavour-detail__note">Deep, bittersweet dark chocolate gelato laced with fudgy brownie chunks and toasted pecans. Intense and indulgent — built for the serious chocolate lover.</p>
+          <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
+
+      <li class="flavour-detail__item">
+        <div class="flavour-detail__media">
           <img src="images/flavour-cheese-cherry.png" alt="Cheesecake, Cherry & Almond Crumble" />
         </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Cheesecake, Cherry &amp; Almond Crumble</h3>
+        <div class="flavour-detail__body">
+          <h3 class="flavour-detail__name">Cheesecake, Cherry &amp; Almond Crumble</h3>
+          <p class="body-text flavour-detail__note">A tangy cheesecake base swirled with tart cherry compote and a buttery almond crumble. Sweet, savoury, and just tart enough.</p>
+          <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
+
+      <li class="flavour-detail__item">
+        <div class="flavour-detail__media">
           <img src="images/flavour-coffee-fig.png" alt="Coffee & Toasted Pecans" />
         </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Coffee &amp; Toasted Pecans</h3>
+        <div class="flavour-detail__body">
+          <h3 class="flavour-detail__name">Coffee &amp; Toasted Pecans</h3>
+          <p class="body-text flavour-detail__note">Bold espresso gelato layered with toasted pecans for crunch. A grown-up, after-dinner flavour with real bite.</p>
+          <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
+
+      <li class="flavour-detail__item">
+        <div class="flavour-detail__media">
           <img src="images/flavour-pistachio-tiramisu.png" alt="Pistachio Tiramisu" />
         </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Pistachio Tiramisu</h3>
+        <div class="flavour-detail__body">
+          <h3 class="flavour-detail__name">Pistachio Tiramisu</h3>
+          <p class="body-text flavour-detail__note">Earthy Sicilian pistachio gelato threaded with espresso-soaked ladyfinger and mascarpone variegato. Subtle, nuanced, and unmistakably rêvasser.</p>
+          <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
+
+      <li class="flavour-detail__item">
+        <div class="flavour-detail__media">
           <img src="images/flavour-vanilla.png" alt="Chocolate, Blueberry & Almond" />
         </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Chocolate, Blueberry &amp; Almond</h3>
+        <div class="flavour-detail__body">
+          <h3 class="flavour-detail__name">Chocolate, Blueberry &amp; Almond</h3>
+          <p class="body-text flavour-detail__note">Velvety chocolate gelato studded with blueberry compote and roasted almond. Robust, refined, and quietly complex.</p>
+          <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
     </ul>
-
-    <a href="flavours.html" class="hero__cta flavours__view-all">View all flavours</a>
   </section>
 
-  <!-- ─── GIFTING TEASER ("JUST FOR YOU") ───────────────── -->
-  <section class="gift-teaser">
-    <div class="gift-teaser__bg">
-      <img src="images/hero-gifting.png" alt="Revasser gelato gifting" />
-    </div>
-    <div class="gift-teaser__overlay"></div>
-    <div class="gift-teaser__content">
-      <p class="hero__eyebrow">Just for you</p>
-      <h2 class="section-title gift-teaser__title">Artisan gelato,<br /><em>gifted with intention.</em></h2>
-      <a href="gifting.html" class="hero__cta">Learn more</a>
+  <!-- ─── STORAGE & ALLERGENS ──────────────────────────── -->
+  <section class="allergens">
+    <div class="allergens__inner">
+      <div class="allergens__col">
+        <h3 class="allergens__heading">Storage & Serving</h3>
+        <ul class="allergens__list">
+          <li>Keep frozen at −18°C</li>
+          <li>Remove from freezer 5 minutes before serving</li>
+          <li>Best consumed within 14 days of receipt</li>
+          <li>Do not refreeze once thawed</li>
+        </ul>
+      </div>
+      <div class="allergens__col">
+        <h3 class="allergens__heading">Allergens</h3>
+        <ul class="allergens__list">
+          <li>Contains: <strong>dairy</strong></li>
+          <li>Some flavours contain: <strong>nuts, gluten, eggs</strong></li>
+          <li>Produced in a kitchen handling nuts, gluten &amp; eggs</li>
+          <li>Flavour-specific allergen info available on request</li>
+        </ul>
+      </div>
     </div>
   </section>
 
