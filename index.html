@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revasser — Artisan Gelato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Revasser</a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#flavours">Flavours</a></li>
+      <li><a href="gifting.html">Gifting</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">Light</button>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__overlay" id="nav-overlay"></div>
+
+  <!-- ─── HERO ─────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="images/hero-home.png" alt="Revasser artisan gelato" />
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Small-batch artisan gelato</p>
+      <h1 class="hero__title">
+        <em>Artisanal.</em><br />
+        <em>Decadent.</em><br />
+        <em>Moreish.</em>
+      </h1>
+      <p class="hero__subtitle">
+        Small-batch gelato, crafted with the finest ingredients.
+      </p>
+      <a href="#flavours" class="hero__cta">Flavours</a>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE ──────────────────────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Artisanal &nbsp;·&nbsp; Small-batch &nbsp;·&nbsp; Handcrafted &nbsp;·&nbsp; Decadent &nbsp;·&nbsp; Moreish &nbsp;·&nbsp; Revasser &nbsp;·&nbsp; Artisanal &nbsp;·&nbsp; Small-batch &nbsp;·&nbsp; Handcrafted &nbsp;·&nbsp; Decadent &nbsp;·&nbsp; Moreish &nbsp;·&nbsp; Revasser &nbsp;·&nbsp;</span>
+      <span aria-hidden="true">Artisanal &nbsp;·&nbsp; Small-batch &nbsp;·&nbsp; Handcrafted &nbsp;·&nbsp; Decadent &nbsp;·&nbsp; Moreish &nbsp;·&nbsp; Revasser &nbsp;·&nbsp; Artisanal &nbsp;·&nbsp; Small-batch &nbsp;·&nbsp; Handcrafted &nbsp;·&nbsp; Decadent &nbsp;·&nbsp; Moreish &nbsp;·&nbsp; Revasser &nbsp;·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ─── WHY REVASSER ─────────────────────────────────── -->
+  <section class="why">
+    <p class="why__label">Why Revasser</p>
+    <div class="why__pillars">
+      <div class="why__pillar">
+        <span class="why__num">01</span>
+        <h3 class="why__heading">Small-batch production</h3>
+        <p class="why__detail">Made in limited quantities — never scaled, never compromised.</p>
+      </div>
+      <div class="why__pillar">
+        <span class="why__num">02</span>
+        <h3 class="why__heading">Finest ingredients</h3>
+        <p class="why__detail">Sourced carefully. Nothing artificial. Nothing hidden.</p>
+      </div>
+      <div class="why__pillar">
+        <span class="why__num">03</span>
+        <h3 class="why__heading">Clean, thoughtful flavours</h3>
+        <p class="why__detail">Each flavour is intentional. Balanced. Worth savouring.</p>
+      </div>
+      <div class="why__pillar">
+        <span class="why__num">04</span>
+        <h3 class="why__heading">Crafted with care</h3>
+        <p class="why__detail">Every batch made by hand, with the same quiet attention.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHAT'S CHURNING ──────────────────────────────── -->
+  <section class="churning">
+    <div class="churning__bg">
+      <img src="images/churning-bg.png" alt="" aria-hidden="true" />
+    </div>
+    <div class="churning__inner">
+      <div class="churning__left">
+        <p class="churning__live"><span class="churning__dot"></span>In churn this week</p>
+        <h2 class="churning__title">What's<br /><em>Churning.</em></h2>
+        <p class="churning__sub">From the kitchen — fresh, limited, and going fast.</p>
+        <a href="#order" class="churning__cta">Order now</a>
+      </div>
+      <div class="churning__list">
+        <div class="churning__item">
+          <span class="churning__name">Pistachio Tiramisu</span>
+          <span class="churning__avail">Available Friday</span>
+        </div>
+        <div class="churning__item">
+          <span class="churning__name">Mango Pistachio</span>
+          <span class="churning__avail">Selling fast</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FLAVOURS ─────────────────────────────────────── -->
+  <section class="flavours" id="flavours">
+    <header class="flavours__header">
+      <h2 class="section-title">Flavours</h2>
+      <p class="body-text flavours__sub">Seasonal. Small-batch. Always crafted.</p>
+    </header>
+
+    <ul class="flavours__list">
+      <li class="flavour-row">
+        <div class="flavour-row__img-wrap">
+          <img src="images/flavour-dark-chocolate.png" alt="Dark Chocolate, Brownie & Toasted Pecans" />
+        </div>
+        <div class="flavour-row__text">
+          <h3 class="flavour-row__name">Dark Chocolate, Brownie &amp; Toasted Pecans</h3>
+          <p class="flavour-row__desc">Intense • Indulgent • Decadent</p>
+        </div>
+      </li>
+      <li class="flavour-row">
+        <div class="flavour-row__img-wrap">
+          <img src="images/flavour-cheese-cherry.png" alt="Cheesecake, Cherry & Almond Crumble" />
+        </div>
+        <div class="flavour-row__text">
+          <h3 class="flavour-row__name">Cheesecake, Cherry &amp; Almond Crumble</h3>
+          <p class="flavour-row__desc">Sweet • Savoury • Tart</p>
+        </div>
+      </li>
+      <li class="flavour-row">
+        <div class="flavour-row__img-wrap">
+          <img src="images/flavour-coffee-fig.png" alt="Coffee & Toasted Pecans" />
+        </div>
+        <div class="flavour-row__text">
+          <h3 class="flavour-row__name">Coffee &amp; Toasted Pecans</h3>
+          <p class="flavour-row__desc">Bold Brew • Indulgence</p>
+        </div>
+      </li>
+      <li class="flavour-row">
+        <div class="flavour-row__img-wrap">
+          <img src="images/flavour-pistachio-tiramisu.png" alt="Pistachio Tiramisu" />
+        </div>
+        <div class="flavour-row__text">
+          <h3 class="flavour-row__name">Pistachio Tiramisu</h3>
+          <p class="flavour-row__desc">Earthy • Subtle • Nuanced</p>
+        </div>
+      </li>
+      <li class="flavour-row">
+        <div class="flavour-row__img-wrap">
+          <img src="images/flavour-vanilla.png" alt="Chocolate, Blueberry & Almond" />
+        </div>
+        <div class="flavour-row__text">
+          <h3 class="flavour-row__name">Chocolate, Blueberry &amp; Almond</h3>
+          <p class="flavour-row__desc">Velvety • Robust • Refined</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ─── WHY RÊVASSER (STORY) ──────────────────────────── -->
+  <section class="story">
+    <div class="story__inner">
+      <div class="story__header">
+        <p class="hero__eyebrow">Why rêvasser</p>
+        <h2 class="section-title">To<br /><em>daydream.</em></h2>
+      </div>
+      <div class="story__body">
+        <p class="body-text story__text">
+          We are a small-batch gelato brand, trained in Italy, backed by years of culinary experience, a discerning palate, and an uncompromising commitment to using the finest ingredients in pursuit of exceptional gelato. The French word rêvasser means "to daydream." That simple idea has shaped everything we do.
+        </p>
+        <p class="body-text story__text">
+          Every flavour begins with an idea—a favourite dessert, a seasonal fruit or a nostalgic classic. We layer our gelato with thoughtfully crafted variegatos and house-made mix-ins, so every spoonful offers a new texture and robust flavour—velvety smooth, crunchy, nutty and sometimes even savoury. It's this interplay of layers that transforms each gelato into a complete dessert experience.
+        </p>
+        <p class="body-text story__text">
+          At rêvasser, gelato isn't an accompaniment to dessert—it is the dessert! Each recipe is thoughtfully composed and carefully balanced, from the base to the final mix-in, creating layers of flavour and texture in every bite. Our flavour combinations are unique, and some pairings have been a revelation for me as well!
+        </p>
+        <p class="body-text story__text">
+          Crafted to become the perfect nightcap, rêvasser is an indulgent ritual to end the day.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW TO ORDER ─────────────────────────────────── -->
+  <section class="order" id="order">
+    <header class="order__header">
+      <h2 class="section-title">How to Order</h2>
+      <p class="body-text">Simple. Personal. No fuss.</p>
+    </header>
+
+    <ol class="order__steps">
+      <li class="order__step">
+        <span class="order__num">01</span>
+        <h3 class="order__step-title">Browse flavours</h3>
+        <p class="order__step-detail">Explore what's available this week above.</p>
+      </li>
+      <li class="order__step">
+        <span class="order__num">02</span>
+        <h3 class="order__step-title">Message us</h3>
+        <p class="order__step-detail">WhatsApp or Instagram — tell us what you'd like.</p>
+      </li>
+      <li class="order__step">
+        <span class="order__num">03</span>
+        <h3 class="order__step-title">Confirm your order</h3>
+        <p class="order__step-detail">We'll confirm availability and arrange payment.</p>
+      </li>
+      <li class="order__step">
+        <span class="order__num">04</span>
+        <h3 class="order__step-title">Delivery or pickup</h3>
+        <p class="order__step-detail">We'll sort the details together.</p>
+      </li>
+    </ol>
+
+    <div class="order__ctas">
+      <a href="https://wa.me/YOURNUMBER" class="btn btn--dark" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.507A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.49-5.187-1.349l-.371-.217-3.762.895.924-3.653-.24-.384A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WhatsApp
+      </a>
+      <a href="https://instagram.com/YOURHANDLE" class="btn btn--outline" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── STORAGE & ALLERGENS ──────────────────────────── -->
+  <section class="allergens">
+    <div class="allergens__inner">
+      <div class="allergens__col">
+        <h3 class="allergens__heading">Storage & Serving</h3>
+        <ul class="allergens__list">
+          <li>Keep frozen at −18°C</li>
+          <li>Remove from freezer 5 minutes before serving</li>
+          <li>Best consumed within 14 days of receipt</li>
+          <li>Do not refreeze once thawed</li>
+        </ul>
+      </div>
+      <div class="allergens__col">
+        <h3 class="allergens__heading">Allergens</h3>
+        <ul class="allergens__list">
+          <li>Contains: <strong>dairy</strong></li>
+          <li>Some flavours contain: <strong>nuts, gluten, eggs</strong></li>
+          <li>Produced in a kitchen handling nuts, gluten &amp; eggs</li>
+          <li>Flavour-specific allergen info available on request</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────────── -->
+  <footer class="footer">
+    <p class="footer__logo">Revasser</p>
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <a href="#flavours">Flavours</a>
+      <a href="gifting.html">Gifting</a>
+      <a href="#order">Order</a>
+    </nav>
+    <p class="footer__copy">&copy; 2026 Revasser. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark');
+      toggle.textContent = isDark ? 'Light' : 'Dark';
+    });
+
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navOverlay = document.getElementById('nav-overlay');
+
+    function closeMenu() {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navLinks.classList.remove('is-open');
+      navOverlay.classList.remove('is-open');
+    }
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navOverlay.classList.toggle('is-open', isOpen);
+    });
+
+    navOverlay.addEventListener('click', closeMenu);
+    navLinks.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+
+    const navEl = document.querySelector('.nav');
+    function updateNavScroll() {
+      navEl.classList.toggle('is-scrolled', window.scrollY > 40);
+    }
+    updateNavScroll();
+    window.addEventListener('scroll', updateNavScroll, { passive: true });
+  </script>
+</body>
+</html>
