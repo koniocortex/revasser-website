@@ -322,84 +322,6 @@ ul, ol { list-style: none; }
 .hero__cta:hover { opacity: 0.7; border-color: rgba(255,255,255,0.7); }
 
 /* ───────────────────────────────────────────
-   MARQUEE
-─────────────────────────────────────────── */
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  border-top: 1px solid var(--parchment);
-  border-bottom: 1px solid var(--parchment);
-  padding: 0.9rem 0;
-  background: var(--cream);
-}
-
-.marquee__track {
-  display: flex;
-  white-space: nowrap;
-  animation: marquee-slide 32s linear infinite;
-}
-
-.marquee__track span {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: clamp(0.82rem, 1.1vw, 0.95rem);
-  color: var(--sand);
-  letter-spacing: 0.05em;
-  padding-right: 1rem;
-}
-
-@keyframes marquee-slide {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* ───────────────────────────────────────────
-   WHY REVASSER
-─────────────────────────────────────────── */
-.why {
-  padding: var(--gap) var(--rail);
-  border-bottom: 1px solid var(--parchment);
-}
-
-.why__label {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--sand);
-  margin-bottom: 2.5rem;
-}
-
-.why__pillars {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1.5rem, 3vw, 3rem);
-}
-
-.why__num {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 0.8rem;
-  color: var(--sand);
-  letter-spacing: 0.08em;
-  margin-bottom: 0.9rem;
-}
-
-.why__heading {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
-  color: var(--ink);
-  margin-bottom: 0.6rem;
-  line-height: 1.25;
-}
-
-.why__detail {
-  font-size: 0.83rem;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-/* ───────────────────────────────────────────
    WHAT'S CHURNING
 ─────────────────────────────────────────── */
 .churning {
@@ -593,13 +515,75 @@ ul, ol { list-style: none; }
   word-break: break-word;
 }
 
-.flavour-row__desc {
-  font-size: 0.85rem;
-  color: var(--muted);
-  font-style: italic;
-  text-align: right;
-  max-width: 28ch;
+.flavours__view-all {
+  display: inline-block;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  color: var(--ink);
+  border-bottom-color: var(--sand);
 }
+
+.flavours__view-all:hover { opacity: 0.7; }
+
+/* ───────────────────────────────────────────
+   GIFTING TEASER ("JUST FOR YOU")
+─────────────────────────────────────────── */
+.gift-teaser {
+  position: relative;
+  width: 100%;
+  height: 70svh;
+  min-height: 32rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gift-teaser__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.gift-teaser__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gift-teaser__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(12, 8, 4, 0.42);
+}
+
+.gift-teaser__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 0 var(--rail);
+}
+
+.gift-teaser__content .hero__eyebrow { color: rgba(255, 255, 255, 0.7); }
+
+.gift-teaser__title {
+  color: #FFFFFF;
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+}
+
+.gift-teaser__title em { color: rgba(255, 255, 255, 0.8); }
+
+.gift-teaser__content .hero__cta {
+  color: #FFFFFF;
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+.gift-teaser__content .hero__cta:hover { border-color: rgba(255, 255, 255, 0.7); }
 
 /* ───────────────────────────────────────────
    HOW TO ORDER
@@ -615,41 +599,8 @@ ul, ol { list-style: none; }
 
 .order__header .section-title { margin-bottom: 0.8rem; }
 
-.order__steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1.5rem, 3vw, 3rem);
-  margin-bottom: clamp(3rem, 5vw, 5rem);
-  padding-bottom: clamp(3rem, 5vw, 5rem);
-  border-bottom: 1px solid var(--sand);
-}
-
-.order__num {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 300;
-  color: var(--sand);
-  line-height: 1;
-  margin-bottom: 1rem;
-  letter-spacing: -0.02em;
-}
-
-.order__step-title {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: 1.15rem;
-  color: var(--ink);
-  margin-bottom: 0.5rem;
-}
-
-.order__step-detail {
-  font-size: 0.83rem;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
 .order__ctas {
+  margin-top: clamp(2rem, 4vw, 3rem);
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -963,9 +914,6 @@ ul, ol { list-style: none; }
   .hero__title { font-size: clamp(2.8rem, 9vw, 5rem); }
   .g-hero__title { font-size: clamp(2.6rem, 8vw, 4.5rem); }
 
-  /* Why */
-  .why__pillars { grid-template-columns: repeat(2, 1fr); }
-
   /* Churning */
   .churning__inner { grid-template-columns: 1fr; }
 
@@ -973,11 +921,7 @@ ul, ol { list-style: none; }
   .flavours__header { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
   .flavour-row { grid-template-columns: 80px 1fr; gap: 1.2rem; }
   .flavour-row__text { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
-  .flavour-row__desc { text-align: left; }
   .flavour-row:hover { margin: 0; padding-left: 0; padding-right: 0; }
-
-  /* Order */
-  .order__steps { grid-template-columns: repeat(2, 1fr); }
 
   /* Allergens */
   .allergens__inner { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -1033,9 +977,7 @@ ul, ol { list-style: none; }
   .hero__title { font-size: clamp(2.6rem, 11vw, 4rem); }
   .g-hero__title { font-size: clamp(2.4rem, 10vw, 3.6rem); }
 
-  .why__pillars { grid-template-columns: 1fr; }
-
-  .order__steps { grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
+  .gift-teaser { height: 60svh; min-height: 26rem; }
 
   .collage {
     grid-template-columns: 1fr 1fr;
