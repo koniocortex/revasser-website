@@ -47,15 +47,6 @@
     </div>
   </section>
 
-  <!-- ─── TICKER (WHAT'S CHURNING) ──────────────────────── -->
-  <section class="ticker" aria-label="What's churning this week">
-    <p class="ticker__label"><span class="ticker__dot"></span>In churn this week</p>
-    <div class="ticker__items">
-      <span class="ticker__item">Pistachio Tiramisu <span class="ticker__status">Available Friday</span></span>
-      <span class="ticker__item">Mango Pistachio <span class="ticker__status">Selling fast</span></span>
-    </div>
-  </section>
-
   <!-- ─── WHY RÊVASSER (STORY) ──────────────────────────── -->
   <section class="story story--home">
     <div class="story__inner">
@@ -183,6 +174,21 @@
     <p class="footer__copy">&copy; 2026 Revasser. All rights reserved.</p>
   </footer>
 
+  <!-- ─── CHURN BANNER ───────────────────────────────────
+       Optional, floating. Delete this whole block when nothing is
+       currently churning — it sits outside document flow (position:
+       fixed), so removing it leaves no gap and the page reads as
+       complete without it. Update the flavours/status below, or
+       remove entries, whenever what's churning changes. ─────────── -->
+  <div class="churn-banner" id="churn-banner">
+    <button type="button" class="churn-banner__close" id="churn-banner-close" aria-label="Dismiss">&times;</button>
+    <p class="churn-banner__label"><span class="churn-banner__dot"></span>In churn this week</p>
+    <div class="churn-banner__items">
+      <span class="churn-banner__item">Pistachio Tiramisu <span class="churn-banner__status">Available Friday</span></span>
+      <span class="churn-banner__item">Mango Pistachio <span class="churn-banner__status">Selling fast</span></span>
+    </div>
+  </div>
+
   <script>
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
@@ -221,6 +227,12 @@
       };
       flavoursPrev.addEventListener('click', () => scrollByCard(-1));
       flavoursNext.addEventListener('click', () => scrollByCard(1));
+    }
+
+    const churnBanner = document.getElementById('churn-banner');
+    const churnBannerClose = document.getElementById('churn-banner-close');
+    if (churnBanner && churnBannerClose) {
+      churnBannerClose.addEventListener('click', () => churnBanner.remove());
     }
   </script>
 </body>
