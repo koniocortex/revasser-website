@@ -62,7 +62,7 @@ ul, ol { list-style: none; }
   color: var(--ink);
 }
 
-.section-title em { font-style: italic; color: var(--brown); }
+.section-title em { font-style: normal; color: inherit; }
 
 .body-text {
   font-size: clamp(0.88rem, 1.15vw, 1rem);
@@ -327,6 +327,80 @@ ul, ol { list-style: none; }
 .hero__cta:hover { opacity: 0.7; border-color: rgba(255,255,255,0.7); }
 
 /* ───────────────────────────────────────────
+   TICKER (homepage — compact "what's churning")
+─────────────────────────────────────────── */
+.ticker {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.2rem, 3vw, 2.5rem);
+  padding: 0.9rem var(--rail);
+  border-top: 1px solid var(--parchment);
+  border-bottom: 1px solid var(--parchment);
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.ticker__label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sand);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.ticker__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #8DC98A;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.ticker__viewport {
+  flex: 1;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 3rem, black calc(100% - 3rem), transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 3rem, black calc(100% - 3rem), transparent);
+}
+
+.ticker__track {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  white-space: nowrap;
+  width: max-content;
+  animation: marquee-slide 26s linear infinite;
+}
+
+.ticker__item {
+  font-family: var(--font-serif);
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+  color: var(--ink);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.55rem;
+}
+
+.ticker__status {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ticker__sep { color: var(--sand); }
+
+@keyframes marquee-slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ───────────────────────────────────────────
    WHAT'S CHURNING
 ─────────────────────────────────────────── */
 .churning {
@@ -396,7 +470,7 @@ ul, ol { list-style: none; }
   margin-bottom: 1rem;
 }
 
-.churning__title em { font-style: italic; color: var(--sand); }
+.churning__title em { font-style: normal; color: inherit; }
 
 .churning__sub {
   font-size: 0.88rem;
@@ -620,7 +694,7 @@ ul, ol { list-style: none; }
   font-size: clamp(2rem, 4.5vw, 3.4rem);
 }
 
-.gift-teaser__title em { color: rgba(255, 255, 255, 0.8); }
+.gift-teaser__title em { font-style: normal; color: inherit; }
 
 .gift-teaser__content .hero__cta {
   color: #FFFFFF;
@@ -752,7 +826,7 @@ ul, ol { list-style: none; }
   margin-bottom: 1.2rem;
 }
 
-.g-hero__title em { font-style: italic; color: rgba(255,255,255,0.75); }
+.g-hero__title em { font-style: normal; color: inherit; }
 
 /* ═══════════════════════════════════════════
    FLAVOURS PAGE
@@ -768,7 +842,7 @@ ul, ol { list-style: none; }
   margin-bottom: 1.2rem;
 }
 
-.f-hero__title em { font-style: italic; color: rgba(255,255,255,0.75); }
+.f-hero__title em { font-style: normal; color: inherit; }
 
 /* Flavour detail list */
 .flavour-detail {
@@ -842,7 +916,7 @@ ul, ol { list-style: none; }
   margin-bottom: 1.2rem;
 }
 
-.a-hero__title em { font-style: italic; color: rgba(255,255,255,0.75); }
+.a-hero__title em { font-style: normal; color: inherit; }
 
 /* Single-quote testimonial spotlight — for pages with only one relevant review */
 .testimonial-spotlight {
@@ -1047,6 +1121,17 @@ ul, ol { list-style: none; }
 
 .story__text { color: var(--muted); max-width: none; }
 
+/* Homepage variant — taller, breezier, more generous side margins */
+.story--home {
+  padding-top: clamp(6rem, 13vw, 11rem);
+  padding-bottom: clamp(6rem, 13vw, 11rem);
+  padding-left: clamp(3rem, 11vw, 11rem);
+  padding-right: clamp(3rem, 11vw, 11rem);
+}
+
+.story--home .story__body { gap: 2rem; }
+.story--home .story__text { line-height: 1.9; }
+
 /* Contact Section */
 .contact-section {
   padding: var(--gap) var(--rail);
@@ -1060,7 +1145,7 @@ ul, ol { list-style: none; }
 }
 
 .contact-section .section-title { color: var(--cream); }
-.contact-section .section-title em { color: var(--sand); }
+.contact-section .section-title em { color: inherit; }
 .contact-section .body-text { color: var(--muted); }
 
 .contact-section__ctas {
