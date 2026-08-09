@@ -97,48 +97,60 @@
       <p class="body-text flavours__sub">Seasonal. Small-batch. Always crafted.</p>
     </header>
 
-    <ul class="flavours__list">
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-dark-chocolate.png" alt="Dark Chocolate, Brownie & Toasted Pecans" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Dark Chocolate, Brownie &amp; Toasted Pecans</h3>
-        </div>
-      </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-cheese-cherry.png" alt="Cheesecake, Cherry & Almond Crumble" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Cheesecake, Cherry &amp; Almond Crumble</h3>
-        </div>
-      </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-coffee-fig.png" alt="Coffee & Toasted Pecans" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Coffee &amp; Toasted Pecans</h3>
-        </div>
-      </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-pistachio-tiramisu.png" alt="Pistachio Tiramisu" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Pistachio Tiramisu</h3>
-        </div>
-      </li>
-      <li class="flavour-row">
-        <div class="flavour-row__img-wrap">
-          <img src="images/flavour-vanilla.png" alt="Chocolate, Blueberry & Almond" />
-        </div>
-        <div class="flavour-row__text">
-          <h3 class="flavour-row__name">Chocolate, Blueberry &amp; Almond</h3>
-        </div>
-      </li>
-    </ul>
+    <div class="flavours__carousel">
+      <ul class="flavours__track" id="flavours-track">
+        <li class="flavour-card">
+          <a href="flavours.html" class="flavour-card__link">
+            <div class="flavour-card__img-wrap">
+              <img src="images/flavour-dark-chocolate.png" alt="Dark Chocolate, Brownie & Toasted Pecans" />
+              <div class="flavour-card__scrim"><span class="flavour-card__cta">View More</span></div>
+            </div>
+            <h3 class="flavour-card__name">Dark Chocolate, Brownie &amp; Toasted Pecans</h3>
+          </a>
+        </li>
+        <li class="flavour-card">
+          <a href="flavours.html" class="flavour-card__link">
+            <div class="flavour-card__img-wrap">
+              <img src="images/flavour-cheese-cherry.png" alt="Cheesecake, Cherry & Almond Crumble" />
+              <div class="flavour-card__scrim"><span class="flavour-card__cta">View More</span></div>
+            </div>
+            <h3 class="flavour-card__name">Cheesecake, Cherry &amp; Almond Crumble</h3>
+          </a>
+        </li>
+        <li class="flavour-card">
+          <a href="flavours.html" class="flavour-card__link">
+            <div class="flavour-card__img-wrap">
+              <img src="images/flavour-coffee-fig.png" alt="Coffee & Toasted Pecans" />
+              <div class="flavour-card__scrim"><span class="flavour-card__cta">View More</span></div>
+            </div>
+            <h3 class="flavour-card__name">Coffee &amp; Toasted Pecans</h3>
+          </a>
+        </li>
+        <li class="flavour-card">
+          <a href="flavours.html" class="flavour-card__link">
+            <div class="flavour-card__img-wrap">
+              <img src="images/flavour-pistachio-tiramisu.png" alt="Pistachio Tiramisu" />
+              <div class="flavour-card__scrim"><span class="flavour-card__cta">View More</span></div>
+            </div>
+            <h3 class="flavour-card__name">Pistachio Tiramisu</h3>
+          </a>
+        </li>
+        <li class="flavour-card">
+          <a href="flavours.html" class="flavour-card__link">
+            <div class="flavour-card__img-wrap">
+              <img src="images/flavour-vanilla.png" alt="Chocolate, Blueberry & Almond" />
+              <div class="flavour-card__scrim"><span class="flavour-card__cta">View More</span></div>
+            </div>
+            <h3 class="flavour-card__name">Chocolate, Blueberry &amp; Almond</h3>
+          </a>
+        </li>
+      </ul>
+
+      <div class="flavours__arrows">
+        <button type="button" class="flavours__arrow flavours__arrow--prev" id="flavours-prev" aria-label="Previous flavours">‹</button>
+        <button type="button" class="flavours__arrow flavours__arrow--next" id="flavours-next" aria-label="Next flavours">›</button>
+      </div>
+    </div>
 
     <a href="flavours.html" class="hero__cta flavours__view-all">View all flavours</a>
   </section>
@@ -213,6 +225,19 @@
     }
     updateNavScroll();
     window.addEventListener('scroll', updateNavScroll, { passive: true });
+
+    const flavoursTrack = document.getElementById('flavours-track');
+    const flavoursPrev = document.getElementById('flavours-prev');
+    const flavoursNext = document.getElementById('flavours-next');
+    if (flavoursTrack && flavoursPrev && flavoursNext) {
+      const scrollByCard = (dir) => {
+        const card = flavoursTrack.querySelector('.flavour-card');
+        const amount = card ? card.getBoundingClientRect().width + 24 : 300;
+        flavoursTrack.scrollBy({ left: dir * amount, behavior: 'smooth' });
+      };
+      flavoursPrev.addEventListener('click', () => scrollByCard(-1));
+      flavoursNext.addEventListener('click', () => scrollByCard(1));
+    }
   </script>
 </body>
 </html>
