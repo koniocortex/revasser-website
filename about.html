@@ -13,14 +13,30 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <a href="index.html" class="nav__logo">Revasser</a>
-    <ul class="nav__links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="flavours.html">Flavours</a></li>
-      <li><a href="gifting.html">Gifting</a></li>
-      <li><a href="about.html" class="nav__active">About</a></li>
-    </ul>
+    <a href="index.html" class="nav__logo"><img src="images/brand_logo.svg" alt="Revasser" /></a>
+    <div class="nav__links" id="nav-links">
+      <ul class="nav__links-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flavours.html">Flavours</a></li>
+        <li><a href="gifting.html">Gifting</a></li>
+        <li><a href="about.html" class="nav__active">About</a></li>
+      </ul>
+      <div class="nav__links-footer">
+        <span class="nav__links-divider" aria-hidden="true"></span>
+        <div class="nav__links-ctas">
+          <a href="https://wa.me/YOURNUMBER" class="btn btn--dark" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.507A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.49-5.187-1.349l-.371-.217-3.762.895.924-3.653-.24-.384A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://instagram.com/YOURHANDLE" class="btn btn--outline" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="nav__actions">
+      <a href="#order" class="nav__cta">Order Now</a>
       <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
@@ -28,23 +44,8 @@
   </nav>
   <div class="nav__overlay" id="nav-overlay"></div>
 
-  <!-- ─── ABOUT HERO ───────────────────────────────────── -->
-  <section class="a-hero">
-    <div class="hero__bg">
-      <img src="images/collage-ingredients.png" alt="Hazelnuts, dried figs and coffee beans — Revasser ingredients" />
-    </div>
-    <div class="hero__overlay"></div>
-    <div class="a-hero__content">
-      <p class="hero__eyebrow">Our Story</p>
-      <h1 class="a-hero__title">Why<br /><em>rêvasser.</em></h1>
-      <p class="hero__subtitle">
-        The people, the philosophy, and the ingredients behind every batch.
-      </p>
-    </div>
-  </section>
-
   <!-- ─── WHY RÊVASSER ─────────────────────────────────── -->
-  <section class="story">
+  <section class="story story--home">
     <div class="story__inner">
       <div class="story__header">
         <p class="hero__eyebrow">Why rêvasser</p>
@@ -52,13 +53,19 @@
       </div>
       <div class="story__body">
         <p class="body-text story__text">
-          We are a small-batch gelato brand, trained in Italy, backed by years of culinary experience, a discerning palate, and an uncompromising commitment to using the finest ingredients in pursuit of exceptional gelato. The French word rêvasser means "to daydream." That simple idea has shaped everything we do.
+          rêvasser is a small-batch gelato brand, trained in Italy and backed by years of culinary experience, a discerning palate and an uncompromising commitment to using the finest ingredients in pursuit of exceptional gelato.
+        </p>
+        <p class="body-text story__text">
+          The French word rêvasser means "to daydream." That simple idea has shaped everything we do.
         </p>
         <p class="body-text story__text">
           Every flavour begins with an idea—a favourite dessert, a seasonal fruit or a nostalgic classic. We layer our gelato with thoughtfully crafted variegatos and house-made mix-ins, so every spoonful offers a new texture and robust flavour—velvety smooth, crunchy, nutty and sometimes even savoury. It's this interplay of layers that transforms each gelato into a complete dessert experience.
         </p>
         <p class="body-text story__text">
-          At rêvasser, gelato isn't an accompaniment to dessert—it is the dessert! Each recipe is thoughtfully composed and carefully balanced, from the base to the final mix-in, creating layers of flavour and texture in every bite. Our flavour combinations are unique, and some pairings have been a revelation for me as well!
+          At rêvasser, gelato isn't an accompaniment to dessert—it is the dessert!
+        </p>
+        <p class="body-text story__text">
+          Each recipe is thoughtfully composed and carefully balanced, from the base to the final mix-in, creating layers of flavour and texture in every bite. Our flavour combinations are unique, and some pairings have been a revelation for me as well!
         </p>
         <p class="body-text story__text">
           Crafted to become the perfect nightcap, rêvasser is an indulgent ritual to end the day.
@@ -69,26 +76,34 @@
 
   <!-- ─── ABOUT THE FOUNDER ────────────────────────────── -->
   <section class="founder">
-    <div class="founder__image-wrap">
-      <!-- replace with <img src="…" alt="…" /> once founder photography is ready -->
-      <div class="founder__image-block">
-        <span class="founder__image-placeholder">Photo coming soon</span>
+    <div class="founder__inner">
+      <div class="founder__image-wrap">
+        <img src="images/about-founder.jpg" alt="Divija Singh, founder of Revasser" />
       </div>
-    </div>
-    <div class="founder__text">
-      <p class="hero__eyebrow">Meet the Founder</p>
-      <h2 class="section-title">Divija<br /><em>Singh.</em></h2>
-      <p class="body-text founder__story">
-        I'm a curious traveller—a flâneur—wildlife enthusiast, amateur sitarist, dog lover and an occasional writer. Armed with a law degree, a Master's in Social Welfare &amp; Development, and a few more diplomas along the way, I chose to follow my passion for the culinary arts. I was raised in a family of avid food lovers and exceptional cooks—perfectionists, really. Food was always my calling.
-      </p>
-      <p class="body-text founder__story">
-        Over the years, I have worked as a food and restaurant consultant, curating menus, designing dining experiences and culinary events across India and abroad. My love, passion and obsession with gelato ultimately took me to Italy. In Grosseto, Tuscany, I trained in the science, technique and craftsmanship of authentic artisanal gelato making. Today, rêvasser is the culmination of that journey, with one endeavour: to create the finest artisanal offering and make rêvasser synonymous with gelato.
-      </p>
+      <div class="founder__text">
+        <p class="hero__eyebrow">Meet the Founder</p>
+        <h2 class="section-title founder__name">Divija <em>Singh.</em></h2>
+        <p class="body-text founder__story">
+          I'm a curious traveller—a flâneur—wildlife enthusiast, amateur sitarist, dog lover and occasional writer.
+        </p>
+        <p class="body-text founder__story">
+          Armed with a law degree, a Master's and a few more diplomas along the way, I chose to follow my passion for the culinary arts. I grew up in a family of avid food lovers and exceptional cooks—perfectionists, really. Food was always my calling.
+        </p>
+        <p class="body-text founder__story">
+          Over the years, I have worked as a food and restaurant consultant, curating menus, designing dining experiences and creating culinary events across India and abroad.
+        </p>
+        <p class="body-text founder__story">
+          My love, passion and obsession with gelato eventually took me to Italy, where I trained in Grosseto, Tuscany, in the science, technique and craftsmanship of authentic gelato making.
+        </p>
+        <p class="body-text founder__story">
+          Today, rêvasser is the culmination of that journey—with one simple endeavour: to create exceptional gelato and make rêvasser synonymous with gelato.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- ─── THE RÊVASSER STORY ───────────────────────────── -->
-  <section class="story">
+  <section class="story story--home">
     <div class="story__inner">
       <div class="story__header">
         <p class="hero__eyebrow">Our Story</p>
@@ -96,56 +111,78 @@
       </div>
       <div class="story__body">
         <p class="body-text story__text">
-          After intensive training in Italy, I spent over six months on research and development—refining recipes, testing flavours and perfecting every texture before launching rêvasser.
+          My journey to build rêvasser took me to Italy. From there, I spent months on research and development—refining recipes, testing flavours and perfecting every texture before launching rêvasser.
         </p>
         <p class="body-text story__text">
-          Every batch is handcrafted in small quantities, using the finest carefully sourced ingredients, honed techniques, formulations and uncompromising attention to detail. The focus has always been on precision, balance and character.
+          Every batch is handcrafted in small quantities, using carefully sourced ingredients, honed techniques, precise formulations and an uncompromising attention to detail. The focus has always been on precision, balance and character.
         </p>
         <p class="body-text story__text">
-          The result is gelato that is elegant, luxurious, nuanced, indulgent, decadent and moreish.
+          The result is gelato that is elegant, luxurious, nuanced, indulgent and moreish.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ─── TESTIMONIAL SPOTLIGHT ─────────────────────────── -->
-  <section class="testimonial-spotlight">
-    <div class="testimonial-spotlight__inner">
-      <p class="testimonial__quote">"The rose cardamom is unlike anything I've tasted. It doesn't try too hard."</p>
-      <footer class="testimonial__attr">— Ankit S.</footer>
+  <!-- ─── TESTIMONIALS ─────────────────────────────────── -->
+  <section class="testimonials">
+    <p class="hero__eyebrow testimonials__heading">What people say.</p>
+    <div class="testimonials__bottom">
+      <div class="testimonials__carousel" id="testimonials-carousel">
+        <span class="testimonials__quote-mark" aria-hidden="true">&#8220;</span>
+        <blockquote class="testimonial is-active">
+          <p class="testimonial__quote">The rose cardamom is unlike anything I've tasted. It doesn't try too hard.</p>
+          <footer class="testimonial__attr">— Ankit S.</footer>
+        </blockquote>
+      </div>
     </div>
   </section>
 
-  <!-- ─── HOW TO ORDER ─────────────────────────────────── -->
-  <section class="order" id="order">
-    <header class="order__header">
-      <h2 class="section-title">How to Order</h2>
-      <p class="body-text">Message us on WhatsApp or Instagram — we'll take it from there.</p>
-    </header>
+  <div class="section-divider" aria-hidden="true"><span></span></div>
 
-    <div class="order__ctas">
-      <a href="https://wa.me/YOURNUMBER" class="btn btn--dark" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.507A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.49-5.187-1.349l-.371-.217-3.762.895.924-3.653-.24-.384A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        WhatsApp
-      </a>
-      <a href="https://instagram.com/YOURHANDLE" class="btn btn--outline" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        Instagram
-      </a>
+  <!-- ─── HOW TO ORDER ─────────────────────────────────── -->
+  <section class="order order--split" id="order">
+    <div class="order__inner">
+      <header class="order__header">
+        <h2 class="section-title">How to Order</h2>
+        <p class="body-text">Message us on WhatsApp or Instagram — we'll take it from there.</p>
+      </header>
+
+      <div class="order__ctas">
+        <a href="https://wa.me/YOURNUMBER" class="btn btn--dark" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.507A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.49-5.187-1.349l-.371-.217-3.762.895.924-3.653-.24-.384A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://instagram.com/YOURHANDLE" class="btn btn--outline" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ─── FOOTER ───────────────────────────────────────── -->
   <footer class="footer">
-    <p class="footer__logo">Revasser</p>
-    <nav class="footer__nav" aria-label="Footer navigation">
-      <a href="index.html">Home</a>
-      <a href="flavours.html">Flavours</a>
-      <a href="gifting.html">Gifting</a>
-      <a href="about.html">About</a>
-    </nav>
     <p class="footer__copy">&copy; 2026 Revasser. All rights reserved.</p>
   </footer>
+
+  <!-- ─── CHURN BANNER ───────────────────────────────────
+       Optional, floating pill ticker. Delete this whole block when
+       nothing is currently churning — it sits outside document flow
+       (position: fixed), so removing it leaves no gap. Update the
+       flavour names below, or remove entries, whenever what's
+       churning changes. ─────────── -->
+  <div class="churn-banner" id="churn-banner">
+    <div class="churn-banner__label">
+      <span class="churn-banner__dot" aria-hidden="true"></span>
+      Now Churning
+    </div>
+    <div class="churn-banner__ticker">
+      <div class="churn-banner__track" id="churn-banner-track">
+        <span class="churn-banner__item">Pistachio Tiramisu</span>
+        <span class="churn-banner__item">Mango Pistachio</span>
+      </div>
+    </div>
+  </div>
 
   <script>
     const navToggle = document.getElementById('nav-toggle');
@@ -167,12 +204,43 @@
     navOverlay.addEventListener('click', closeMenu);
     navLinks.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
 
-    const navEl = document.querySelector('.nav');
-    function updateNavScroll() {
-      navEl.classList.toggle('is-scrolled', window.scrollY > 40);
+    const testimonials = document.querySelectorAll('#testimonials-carousel .testimonial');
+    const testimonialDots = document.querySelectorAll('#testimonials-dots .testimonials__dot');
+    if (testimonials.length > 1) {
+      let activeIndex = 0;
+      let testimonialAutoplay;
+
+      function goToTestimonial(index) {
+        testimonials[activeIndex].classList.remove('is-active');
+        testimonialDots[activeIndex].classList.remove('is-active');
+        activeIndex = index;
+        testimonials[activeIndex].classList.add('is-active');
+        testimonialDots[activeIndex].classList.add('is-active');
+      }
+
+      function startTestimonialAutoplay() {
+        testimonialAutoplay = setInterval(() => {
+          goToTestimonial((activeIndex + 1) % testimonials.length);
+        }, 7000);
+      }
+
+      testimonialDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          if (index === activeIndex) return;
+          goToTestimonial(index);
+          clearInterval(testimonialAutoplay);
+          startTestimonialAutoplay();
+        });
+      });
+
+      startTestimonialAutoplay();
     }
-    updateNavScroll();
-    window.addEventListener('scroll', updateNavScroll, { passive: true });
+
+    const churnTrack = document.getElementById('churn-banner-track');
+    if (churnTrack && churnTrack.children.length > 1) {
+      Array.from(churnTrack.children).forEach((item) => churnTrack.appendChild(item.cloneNode(true)));
+      churnTrack.classList.add('is-scrolling');
+    }
   </script>
 </body>
 </html>

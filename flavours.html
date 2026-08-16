@@ -13,14 +13,30 @@
 
   <!-- NAV -->
   <nav class="nav">
-    <a href="index.html" class="nav__logo">Revasser</a>
-    <ul class="nav__links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="flavours.html" class="nav__active">Flavours</a></li>
-      <li><a href="gifting.html">Gifting</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
+    <a href="index.html" class="nav__logo"><img src="images/brand_logo.svg" alt="Revasser" /></a>
+    <div class="nav__links" id="nav-links">
+      <ul class="nav__links-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flavours.html" class="nav__active">Flavours</a></li>
+        <li><a href="gifting.html">Gifting</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav__links-footer">
+        <span class="nav__links-divider" aria-hidden="true"></span>
+        <div class="nav__links-ctas">
+          <a href="https://wa.me/YOURNUMBER" class="btn btn--dark" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.507A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.49-5.187-1.349l-.371-.217-3.762.895.924-3.653-.24-.384A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://instagram.com/YOURHANDLE" class="btn btn--outline" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="nav__actions">
+      <a href="#order" class="nav__cta">Order Now</a>
       <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
@@ -36,72 +52,38 @@
     <div class="hero__overlay"></div>
     <div class="f-hero__content">
       <p class="hero__eyebrow">Our Flavours</p>
-      <h1 class="f-hero__title">Five signature<br /><em>scoops.</em></h1>
-      <p class="hero__subtitle">
-        Small-batch, hand-churned, and never the same batch twice.
-      </p>
-    </div>
-  </section>
-
-  <!-- ─── WHAT'S CHURNING ──────────────────────────────── -->
-  <section class="churning">
-    <div class="churning__inner">
-      <div class="churning__left">
-        <p class="churning__live"><span class="churning__dot"></span>In churn this week</p>
-        <h2 class="churning__title">What's<br /><em>Churning.</em></h2>
-        <p class="churning__sub">From the kitchen — fresh, limited, and going fast.</p>
-        <a href="#order" class="churning__cta">Order now</a>
-      </div>
-      <div class="churning__list">
-        <div class="churning__item">
-          <span class="churning__name">Pistachio Tiramisu</span>
-          <span class="churning__avail">Available Friday</span>
-        </div>
-        <div class="churning__item">
-          <span class="churning__name">Mango Pistachio</span>
-          <span class="churning__avail">Selling fast</span>
-        </div>
-      </div>
+      <h1 class="f-hero__title">Small-batch, hand-churned, and never the same batch twice.</h1>
     </div>
   </section>
 
   <!-- ─── FLAVOUR DETAIL ───────────────────────────────── -->
   <section class="flavour-detail">
     <header class="flavour-detail__header">
-      <h2 class="section-title">The<br /><em>Flavours.</em></h2>
+      <h2 class="section-title">The <em>Flavours.</em></h2>
       <p class="body-text">Five recipes, made in small batches. Descriptions and pricing below are draft placeholders, pending final copy.</p>
     </header>
 
     <ul class="flavour-detail__list">
       <li class="flavour-detail__item">
         <div class="flavour-detail__media">
-          <img src="images/flavour-dark-chocolate.png" alt="Dark Chocolate, Brownie & Toasted Pecans" />
+          <img src="images/flavour-dark-chocolate.png" alt="Dark Chocolate, Brownie & Buttered Pecan" />
         </div>
         <div class="flavour-detail__body">
-          <h3 class="flavour-detail__name">Dark Chocolate, Brownie &amp; Toasted Pecans</h3>
-          <p class="body-text flavour-detail__note">Deep, bittersweet dark chocolate gelato laced with fudgy brownie chunks and toasted pecans. Intense and indulgent — built for the serious chocolate lover.</p>
+          <h3 class="flavour-detail__name">Dark Chocolate, Brownie &amp; Buttered Pecan</h3>
+          <p class="flavour-detail__tags">Intense • Indulgent • Decadent</p>
+          <p class="body-text flavour-detail__note">The one that disappears first — intense dark chocolate layered with fudgy brownie and buttery salted pecans.</p>
           <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
 
       <li class="flavour-detail__item">
         <div class="flavour-detail__media">
-          <img src="images/flavour-cheese-cherry.png" alt="Cheesecake, Cherry & Almond Crumble" />
+          <img src="images/flavour-coffee-fig.png" alt="Coffee, Fig Jam & Praline Hazelnut" />
         </div>
         <div class="flavour-detail__body">
-          <h3 class="flavour-detail__name">Cheesecake, Cherry &amp; Almond Crumble</h3>
-          <p class="body-text flavour-detail__note">A tangy cheesecake base swirled with tart cherry compote and a buttery almond crumble. Sweet, savoury, and just tart enough.</p>
-          <p class="flavour-detail__price">Price — to be added</p>
-        </div>
-      </li>
-
-      <li class="flavour-detail__item">
-        <div class="flavour-detail__media">
-          <img src="images/flavour-coffee-fig.png" alt="Coffee & Toasted Pecans" />
-        </div>
-        <div class="flavour-detail__body">
-          <h3 class="flavour-detail__name">Coffee &amp; Toasted Pecans</h3>
-          <p class="body-text flavour-detail__note">Bold espresso gelato layered with toasted pecans for crunch. A grown-up, after-dinner flavour with real bite.</p>
+          <h3 class="flavour-detail__name">Coffee, Fig Jam &amp; Praline Hazelnut</h3>
+          <p class="flavour-detail__tags">Bold Brew • Indulgence</p>
+          <p class="body-text flavour-detail__note">For coffee aficionados — perfect on its own or alongside an almond biscotti.</p>
           <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
@@ -112,18 +94,32 @@
         </div>
         <div class="flavour-detail__body">
           <h3 class="flavour-detail__name">Pistachio Tiramisu</h3>
-          <p class="body-text flavour-detail__note">Earthy Sicilian pistachio gelato threaded with espresso-soaked ladyfinger and mascarpone variegato. Subtle, nuanced, and unmistakably rêvasser.</p>
+          <p class="flavour-detail__tags">Earthy • Subtle • Nuanced</p>
+          <p class="body-text flavour-detail__note">For those who choose pistachio first and love a good tiramisu.</p>
           <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
 
       <li class="flavour-detail__item">
         <div class="flavour-detail__media">
-          <img src="images/flavour-vanilla.png" alt="Chocolate, Blueberry & Almond" />
+          <img src="images/flavour-cheese-cherry.png" alt="Cheese, Cherry & Almond Crumble" />
         </div>
         <div class="flavour-detail__body">
-          <h3 class="flavour-detail__name">Chocolate, Blueberry &amp; Almond</h3>
-          <p class="body-text flavour-detail__note">Velvety chocolate gelato studded with blueberry compote and roasted almond. Robust, refined, and quietly complex.</p>
+          <h3 class="flavour-detail__name">Cheese, Cherry &amp; Almond Crumble</h3>
+          <p class="flavour-detail__tags">Sweet • Savoury • Tart</p>
+          <p class="body-text flavour-detail__note">It's like a frozen cheesecake — tart, creamy and buttery.</p>
+          <p class="flavour-detail__price">Price — to be added</p>
+        </div>
+      </li>
+
+      <li class="flavour-detail__item">
+        <div class="flavour-detail__media">
+          <img src="images/flavour-vanilla.png" alt="Chocolate, Blueberry & Toasted Almonds" />
+        </div>
+        <div class="flavour-detail__body">
+          <h3 class="flavour-detail__name">Chocolate, Blueberry &amp; Toasted Almonds</h3>
+          <p class="flavour-detail__tags">Velvety • Robust • Refined</p>
+          <p class="body-text flavour-detail__note">For the end of a long day, when all you want is a favourite chair and one last scoop.</p>
           <p class="flavour-detail__price">Price — to be added</p>
         </div>
       </li>
@@ -135,55 +131,86 @@
     <div class="allergens__inner">
       <div class="allergens__col">
         <h3 class="allergens__heading">Storage & Serving</h3>
-        <ul class="allergens__list">
-          <li>Keep frozen at −18°C</li>
-          <li>Remove from freezer 5 minutes before serving</li>
-          <li>Best consumed within 14 days of receipt</li>
-          <li>Do not refreeze once thawed</li>
-        </ul>
+        <div class="storage-row">
+          <div class="storage-item">
+            <svg class="storage-item__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.4 11.2A2 2 0 0 1 15.6 21H8.4a2 2 0 0 1-2-1.8L5 8Z"/><path d="M3 8h18"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            <p class="allergens__label">Tub Size</p>
+            <p class="allergens__text">450 g<br />Serves 3–4</p>
+          </div>
+          <div class="storage-item">
+            <svg class="storage-item__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            <p class="allergens__label">Shelf Life</p>
+            <p class="allergens__text">3 months<br />at −10°C or below</p>
+          </div>
+          <div class="storage-item">
+            <svg class="storage-item__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2v20M4.2 6.5l15.6 11M4.2 17.5l15.6-11"/><path d="M8 4.2l4 3 4-3M8 19.8l4-3 4 3M2.3 9.2l3.7 2.8-3.7 2.8M21.7 9.2L18 12l3.7 2.8"/></svg>
+            <p class="allergens__label">Storage</p>
+            <p class="allergens__text">Keep frozen<br />at all times</p>
+          </div>
+          <div class="storage-item">
+            <svg class="storage-item__icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M9 12.5L12 21l3-8.5"/></svg>
+            <p class="allergens__label">Serving</p>
+            <p class="allergens__text">Soften briefly<br />before scooping</p>
+          </div>
+        </div>
       </div>
       <div class="allergens__col">
-        <h3 class="allergens__heading">Allergens</h3>
-        <ul class="allergens__list">
-          <li>Contains: <strong>dairy</strong></li>
-          <li>Some flavours contain: <strong>nuts, gluten, eggs</strong></li>
-          <li>Produced in a kitchen handling nuts, gluten &amp; eggs</li>
-          <li>Flavour-specific allergen info available on request</li>
-        </ul>
+        <h3 class="allergens__heading">Allergen Information</h3>
+        <div class="allergens__list">
+          <p class="allergens__text">Contains: <strong>dairy and nuts</strong>.</p>
+          <p class="allergens__text">Egg: Dark Chocolate contains egg.</p>
+          <p class="allergens__text">Gluten: Coffee, Fig Jam &amp; Hazelnut, and Chocolate Blueberry &amp; Toasted Almond are gluten-free. Other flavours may contain gluten depending on their ingredients.</p>
+          <p class="allergens__text">Ingredients: Made with carefully selected ingredients, including a natural emulsifier and stabiliser.</p>
+          <p class="allergens__text">Please note: rêvasser is made in a kitchen where dairy, nuts, eggs and other allergens are handled.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ─── HOW TO ORDER ─────────────────────────────────── -->
-  <section class="order" id="order">
-    <header class="order__header">
-      <h2 class="section-title">How to Order</h2>
-      <p class="body-text">Message us on WhatsApp or Instagram — we'll take it from there.</p>
-    </header>
+  <section class="order order--split" id="order">
+    <div class="order__inner">
+      <header class="order__header">
+        <h2 class="section-title">How to Order</h2>
+        <p class="body-text">Message us on WhatsApp or Instagram — we'll take it from there.</p>
+      </header>
 
-    <div class="order__ctas">
-      <a href="https://wa.me/YOURNUMBER" class="btn btn--dark" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.507A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.49-5.187-1.349l-.371-.217-3.762.895.924-3.653-.24-.384A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        WhatsApp
-      </a>
-      <a href="https://instagram.com/YOURHANDLE" class="btn btn--outline" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        Instagram
-      </a>
+      <div class="order__ctas">
+        <a href="https://wa.me/YOURNUMBER" class="btn btn--dark" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.507A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.652-.49-5.187-1.349l-.371-.217-3.762.895.924-3.653-.24-.384A9.959 9.959 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://instagram.com/YOURHANDLE" class="btn btn--outline" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ─── FOOTER ───────────────────────────────────────── -->
   <footer class="footer">
-    <p class="footer__logo">Revasser</p>
-    <nav class="footer__nav" aria-label="Footer navigation">
-      <a href="index.html">Home</a>
-      <a href="flavours.html">Flavours</a>
-      <a href="gifting.html">Gifting</a>
-      <a href="about.html">About</a>
-    </nav>
     <p class="footer__copy">&copy; 2026 Revasser. All rights reserved.</p>
   </footer>
+
+  <!-- ─── CHURN BANNER ───────────────────────────────────
+       Optional, floating pill ticker. Delete this whole block when
+       nothing is currently churning — it sits outside document flow
+       (position: fixed), so removing it leaves no gap. Update the
+       flavour names below, or remove entries, whenever what's
+       churning changes. ─────────── -->
+  <div class="churn-banner" id="churn-banner">
+    <div class="churn-banner__label">
+      <span class="churn-banner__dot" aria-hidden="true"></span>
+      Now Churning
+    </div>
+    <div class="churn-banner__ticker">
+      <div class="churn-banner__track" id="churn-banner-track">
+        <span class="churn-banner__item">Pistachio Tiramisu</span>
+        <span class="churn-banner__item">Mango Pistachio</span>
+      </div>
+    </div>
+  </div>
 
   <script>
     const navToggle = document.getElementById('nav-toggle');
@@ -205,12 +232,11 @@
     navOverlay.addEventListener('click', closeMenu);
     navLinks.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
 
-    const navEl = document.querySelector('.nav');
-    function updateNavScroll() {
-      navEl.classList.toggle('is-scrolled', window.scrollY > 40);
+    const churnTrack = document.getElementById('churn-banner-track');
+    if (churnTrack && churnTrack.children.length > 1) {
+      Array.from(churnTrack.children).forEach((item) => churnTrack.appendChild(item.cloneNode(true)));
+      churnTrack.classList.add('is-scrolling');
     }
-    updateNavScroll();
-    window.addEventListener('scroll', updateNavScroll, { passive: true });
   </script>
 </body>
 </html>
