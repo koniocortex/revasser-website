@@ -902,6 +902,23 @@ ul, ol { list-style: none; }
 .allergens__text strong { color: var(--ink); font-weight: 400; }
 
 /* ───────────────────────────────────────────
+   RÊVASSER WORDMARK WATERMARK (end of every page)
+─────────────────────────────────────────── */
+.wordmark {
+  padding: clamp(4rem, 8vw, 7rem) var(--rail);
+  overflow: hidden;
+  text-align: center;
+}
+
+.wordmark__img {
+  display: block;
+  width: min(78vw, 1100px);
+  height: auto;
+  margin: 0 auto;
+  opacity: 0.06;
+}
+
+/* ───────────────────────────────────────────
    FOOTER
 ─────────────────────────────────────────── */
 .footer {
@@ -988,6 +1005,8 @@ ul, ol { list-style: none; }
   margin: 0 auto clamp(3rem, 5vw, 5rem);
 }
 
+.flavour-detail__header .body-text { max-width: 60ch; margin-top: 1rem; }
+
 .flavour-detail__list {
   max-width: 1080px;
   margin: 0 auto;
@@ -1034,7 +1053,7 @@ ul, ol { list-style: none; }
 }
 
 .flavour-detail__note {
-  max-width: 44ch;
+  max-width: 60ch;
   margin-top: 0.4rem;
 }
 
@@ -1314,6 +1333,52 @@ ul, ol { list-style: none; }
 
 .story--home .story__body { gap: 2rem; }
 .story--home .story__text { line-height: 1.9; }
+
+/* Definition callout — meaning and pronunciation of rêvasser */
+.definition {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--parchment);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.definition__word {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.definition__say {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sand);
+}
+
+.definition__ipa {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.definition__meaning {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.definition__meaning span {
+  font-style: italic;
+  color: var(--muted);
+}
+
+.definition__note {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
 
 /* ───────────────────────────────────────────
    RESPONSIVE — TABLET ≤ 900px
