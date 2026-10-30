@@ -942,6 +942,8 @@ ul, ol { list-style: none; }
   justify-content: center;
 }
 
+.g-hero .hero__bg img { object-position: center 85%; }
+
 .g-hero__content {
   align-items: center;
   text-align: center;
@@ -972,6 +974,11 @@ ul, ol { list-style: none; }
 .f-hero {
   height: 640px;
   justify-content: center;
+}
+
+.f-hero picture {
+  display: block;
+  height: 100%;
 }
 
 .f-hero__content {
@@ -1268,6 +1275,8 @@ ul, ol { list-style: none; }
   overflow: hidden;
 }
 
+.founder__image-wrap img { object-position: center 35%; } /* keep the cup in frame when cropped wide */
+
 .founder__text {
   display: flex;
   flex-direction: column;
@@ -1431,6 +1440,22 @@ ul, ol { list-style: none; }
 ─────────────────────────────────────────── */
 @media (max-width: 560px) {
   .order--split .order__ctas { flex-direction: column; }
+
+  /* Gifting hero — focus on the gelato tubs */
+  .g-hero .hero__bg img { object-position: 64% center; }
+
+  /* Flavours hero — portrait image (cups stacked), title overlaid at the bottom */
+  .f-hero {
+    height: calc(5rem + 200vw); /* fixed nav + image */
+    background: #0C0B0C; /* matches the photo's backdrop */
+  }
+  .f-hero .hero__bg { top: 5rem; } /* clear the fixed nav */
+  .f-hero .hero__bg img {
+    object-fit: contain;
+    /* feather the photo's side edges into the backdrop */
+    -webkit-mask-image: linear-gradient(to right, transparent 17%, #000 27%, #000 73%, transparent 83%);
+            mask-image: linear-gradient(to right, transparent 17%, #000 27%, #000 73%, transparent 83%);
+  }
 
   .churn-banner {
     left: 0;
