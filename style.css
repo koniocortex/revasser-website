@@ -1212,7 +1212,7 @@ ul, ol { list-style: none; }
 .collage {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 28vw);
+  grid-auto-rows: 22vw;
   gap: 0.5rem;
   padding: var(--gap) var(--rail);
   background: var(--parchment);
@@ -1250,8 +1250,6 @@ ul, ol { list-style: none; }
 }
 
 .collage__cell--tall { grid-row: span 2; }
-
-.collage__cell--wide { grid-column: span 1; }
 
 /* Testimonials */
 .testimonials {
@@ -1541,7 +1539,7 @@ ul, ol { list-style: none; }
   .order--split .order__ctas { align-items: center; }
 
   /* Gifting */
-  .collage { grid-template-rows: repeat(2, 44vw); }
+  .collage { grid-auto-rows: 30vw; }
   .founder__inner {
     grid-template-columns: 1fr;
     border-radius: 20px;
@@ -1693,9 +1691,8 @@ ul, ol { list-style: none; }
 
   .collage {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-auto-rows: 46vw;
   }
-  .collage__cell--tall { grid-row: span 1; }
 
   /* Churning: stack name + availability on small screens */
   .churning__item {
