@@ -437,6 +437,21 @@ ul, ol { list-style: none; }
   color: var(--ink);
   letter-spacing: -0.01em;
   white-space: nowrap;
+  position: relative;
+}
+
+/* Separator dot centred in the gap after each item (every item gets one,
+   so the looping ticker stays seamless) */
+.churn-banner__track.is-scrolling .churn-banner__item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--sand);
+  transform: translate(50%, -50%);
 }
 
 @media (min-width: 901px) {
