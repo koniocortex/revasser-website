@@ -976,6 +976,13 @@ ul, ol { list-style: none; }
 
 .footer__list a { transition: color 0.2s ease; }
 .footer__list a:hover { color: var(--sand); }
+.footer__directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 /* ───────────────────────────────────────────
    FAQ (home page)
@@ -1213,6 +1220,7 @@ ul, ol { list-style: none; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 22vw;
+  grid-auto-flow: dense;
   gap: 0.5rem;
   padding: var(--gap) var(--rail);
   background: var(--parchment);
@@ -1392,7 +1400,7 @@ ul, ol { list-style: none; }
   overflow: hidden;
 }
 
-.founder__image-wrap img { object-position: center 35%; } /* keep the cup in frame when cropped wide */
+.founder__image-wrap img { object-position: center 30%; } /* keep the face in frame when cropped wide */
 
 .founder__text {
   display: flex;
@@ -1410,6 +1418,61 @@ ul, ol { list-style: none; }
 }
 
 .founder + .story { border-top: none; }
+
+/* Split screen — full-bleed 50/50: text on the left, photo on the right.
+   Stacks with the photo on top on small screens. */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: clamp(34rem, 90vh, 52rem);
+  margin-top: var(--gap);
+}
+
+.split__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 6vw, 7rem);
+  min-width: 0;
+}
+
+.split__title {
+  margin-top: -0.4rem;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.split__copy {
+  color: var(--muted);
+  max-width: 34rem;
+  line-height: 1.9;
+}
+
+.split__media {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.split__media img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%; /* keep the cone in frame */
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .split__media {
+    order: -1;
+    aspect-ratio: 4 / 5;
+  }
+  .split__text { padding: 3.5rem 24px 4.5rem; }
+}
 
 /* Story (About Revasser) */
 .story {
